@@ -1,0 +1,21 @@
+{
+  "name": "liketypeless",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Local-first Windows voice input, text structuring, and translation assistant.",
+  "workspaces": [
+    "apps/desktop",
+    "packages/shared"
+  ],
+  "scripts": {
+    "dev": "concurrently -n api,desktop -c blue,green \"npm run dev:api\" \"npm run dev:desktop\"",
+    "dev:api": ".\\.venv\\Scripts\\python.exe apps/local-api/scripts/run_api.py",
+    "dev:desktop": "npm --workspace @liketypeless/shared run build && npm --workspace apps/desktop run dev",
+    "check": "npm --workspace @liketypeless/shared run check && npm --workspace @liketypeless/desktop run check",
+    "check:api": "cd apps/local-api && python -m compileall app scripts",
+    "download:stt": "cd apps/local-api && python scripts/download_stt_model.py --model small"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}

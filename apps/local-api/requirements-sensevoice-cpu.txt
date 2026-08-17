@@ -1,0 +1,6 @@
+--extra-index-url https://download.pytorch.org/whl/cpu
+funasr==1.3.14
+modelscope==1.38.1
+soundfile==0.14.0
+torch==2.13.0+cpu
+torchaudio==2.11.0+cpu

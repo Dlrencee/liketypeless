@@ -1,0 +1,15 @@
+node_modules/
+dist/
+build/
+out/
+.vite/
+.venv/
+.venv-asr-py312/
+__pycache__/
+*.pyc
+*.tsbuildinfo
+.env
+.env.local
+*.log
+apps/local-api/.pytest_cache/
+apps/local-api/data/

@@ -1,0 +1,28 @@
+{
+  "name": "@liketypeless/desktop",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "out/main/index.js",
+  "scripts": {
+    "dev": "electron-vite dev",
+    "build": "electron-vite build",
+    "preview": "electron-vite preview",
+    "check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@liketypeless/shared": "0.1.0",
+    "@vitejs/plugin-react": "^5.1.1",
+    "electron-vite": "^4.0.0",
+    "react": "^19.2.1",
+    "react-dom": "^19.2.1"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.1",
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
+    "electron": "^39.2.4",
+    "typescript": "^5.9.3",
+    "vite": "^7.2.4"
+  }
+}
